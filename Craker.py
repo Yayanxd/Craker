@@ -2182,9 +2182,9 @@ def crack_likes():
         os.system('clear')
         print logo6
         print '\x1b[1;96m \xc2\xab--------------------------------------------\xc2\xbb'
-        print '        \x1b[1;96m\xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f \x1b[1;97mCRACK POSTINGAN GRUP/Teman\x1b[1;96m \xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f'
+        print '        \x1b[1;96m\xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f \x1b[1;97mCRACK POSTINGAN GRUP/TEMAN\x1b[1;96m \xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f'
         print '\x1b[1;96m \xc2\xab--------------------------------------------\xc2\xbb'
-        tez = raw_input('\x1b[1;97m{\x1b[1;96m\xe2\x97\x8f\x1b[1;97m}\x1b[1;96m ID Postingan Group/Teman \x1b[1;91m :\x1b[1;92m ')
+        tez = raw_input('\x1b[1;97m{\x1b[1;96m\xe2\x97\x8f\x1b[1;97m}\x1b[1;96m ID Postingan Grup/Teman \x1b[1;91m :\x1b[1;92m ')
         r = requests.get('https://graph.facebook.com/' + tez + '/likes?limit=9999999&access_token=' + toket)
         z = json.loads(r.text)
         for i in z['data']:
@@ -2418,7 +2418,7 @@ def crack_follow():
     print '\x1b[1;96m \xc2\xab--------------------------------------------\xc2\xbb'
     print '              \x1b[1;95m\xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f \x1b[1;97mCRACK FOLLOWERS \x1b[1;95m\xe2\x97\x8f\xe2\x97\x8f\xe2\x97\x8f'
     print '\x1b[1;96m \xc2\xab--------------------------------------------\xc2\xbb'
-    idt = raw_input('\x1b[1;97m{\x1b[1;95m\xe2\x97\x8f\x1b[1;97m} \x1b[1;95mID Public/friend \x1b[1;91m:\x1b[1;92m ')
+    idt = raw_input('\x1b[1;97m{\x1b[1;95m\xe2\x97\x8f\x1b[1;97m} \x1b[1;95mID Publik/Teman \x1b[1;91m:\x1b[1;92m ')
     try:
         jok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
         op = json.loads(jok.text)
