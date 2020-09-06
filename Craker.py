@@ -2425,7 +2425,7 @@ def crack_follow():
         print '\x1b[1;97m{\x1b[1;95m\xe2\x97\x8f\x1b[1;97m} \x1b[1;95mNama \x1b[1;91m:\x1b[1;92m ' + op['name']
     except KeyError:
         print '\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} ID publik / teman tidak ada !'
-        raw_input('\n\x1b[1;95m[\x1b[1;97m<Back>\x1b[1;95m]')
+        raw_input('\n\x1b[1;95m[\x1b[1;97m<Keluar>\x1b[1;95m]')
         menu()
     except requests.exceptions.ConnectionError:
         print '\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} No internet Conection !'
